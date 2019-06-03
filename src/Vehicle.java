@@ -8,4 +8,6 @@ public class Vehicle {
         this.capacity = capacity;
         this.avrComsumptionPer = avrComsumptionPer;
     }
+
+
 }
