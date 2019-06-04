@@ -6,8 +6,7 @@ public class Test {
         System.out.println(truck.name + " " + truck.capacity + " " + truck.airCondition + " " + truck.weight + " " + truck.avrComsumptionPer + " ");
         System.out.println(car.name + " " + car.capacity + " " + car.avrComsumptionPer + " " + car.airCondition);
 
-        System.out.println(Method.range(car.capacity,car.avrComsumptionPer) + "KM");
-
+        System.out.println(Method.range(car.capacity, car.avrComsumptionPer) + "KM");
 
 
         Car[] cars = new Car[4];
@@ -16,20 +15,19 @@ public class Test {
         cars[2] = new Car("Maluch", 64, 3, false);
         cars[3] = new Car("Mitsu", 85, 4, false);
 
-        for (int i = 0; i <cars.length ; i++) {
+        for (int i = 0; i < cars.length; i++) {
             System.out.println(cars[i].name + " " + cars[i].capacity + " " + cars[i].avrComsumptionPer + " " + cars[i].airCondition);
-            System.out.println(Method.range(cars[i].capacity,cars[i].avrComsumptionPer) + "KM ma zasięg ten pojazd");
+            System.out.println(Method.range(cars[i].capacity, cars[i].avrComsumptionPer) + "KM ma zasięg ten pojazd");
         }
 
-        for (int i = 0; i <cars.length ; i++) {
-            cars[i].airCondition = true;
-            cars[i] = new Car(cars[i].name, cars[i].capacity, cars[i].avrComsumptionPer,cars[i].airCondition);
-        }
-        for (int i = 0; i <cars.length ; i++) {
-            System.out.println(cars[i].name + " " + cars[i].capacity + " " + cars[i].avrComsumptionPer + " " + cars[i].airCondition);
-            System.out.println(Method.range(cars[i].capacity,cars[i].avrComsumptionPer) + "KM ma zasięg ten pojazd");
-        }
+        for (int i = 0; i < cars.length; i++) {
 
+            cars[i] = new Car(cars[i].name, cars[i].capacity, cars[i].avrComsumptionPer, true);
+        }
+        for (int i = 0; i < cars.length; i++) {
+            System.out.println(cars[i].name + " " + cars[i].capacity + " " + cars[i].avrComsumptionPer + " " + cars[i].airCondition);
+            System.out.println(Method.range(cars[i].capacity, cars[i].avrComsumptionPer) + "KM ma zasięg ten pojazd");
+        }
 
 
     }

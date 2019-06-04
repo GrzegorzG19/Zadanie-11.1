@@ -7,10 +7,11 @@ public class Car extends Vehicle {
 
         this.airCondition = airCondition;
 
-            this.avrComsumptionPer = comsum(avrComsumptionPer, airCondition);
+        this.avrComsumptionPer = comsum(avrComsumptionPer, airCondition);
 
     }
-    public double comsum(double avrComsumptionPer, boolean airCondition){
+
+    public double comsum(double avrComsumptionPer, boolean airCondition) {
         if (airCondition) {
             avrComsumptionPer += avrComsumptionPer * 0.8;
         }

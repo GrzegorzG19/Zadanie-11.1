@@ -4,7 +4,7 @@ public class Truck extends Car {
     public Truck(String name, double capacity, double avrComsumptionPer, boolean airCondition, double weight) {
         super(name, capacity, avrComsumptionPer, airCondition);
         this.weight = weight;
-        this.avrComsumptionPer = comsum(avrComsumptionPer,airCondition);
+        this.avrComsumptionPer = comsum(avrComsumptionPer, airCondition);
 
     }
 
@@ -12,9 +12,7 @@ public class Truck extends Car {
     public double comsum(double avrComsumptionPer, boolean airCondition) {
         if (airCondition) {
             avrComsumptionPer += (avrComsumptionPer * 1.6) + (0.5 * (weight / 100));
-        }
-        else
-        {
+        } else {
             avrComsumptionPer += (0.5 * (weight / 100));
         }
 
