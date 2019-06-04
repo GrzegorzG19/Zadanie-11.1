@@ -1,5 +1,5 @@
 public class Truck extends Car {
-    double weight;
+    public double weight;
 
     public Truck(String name, double capacity, double avrComsumptionPer, boolean airCondition, double weight) {
         super(name, capacity, avrComsumptionPer, airCondition);

@@ -1,5 +1,5 @@
 public class Car extends Vehicle {
-    boolean airCondition;
+    public boolean airCondition;
 
 
     public Car(String name, double capacity, double avrComsumptionPer, boolean airCondition) {
