@@ -4,14 +4,14 @@ public class Truck extends Car {
     public Truck(String name, double capacity, double avrComsumptionPer, boolean airCondition, double weight) {
         super(name, capacity, avrComsumptionPer, airCondition);
         this.weight = weight;
-        this.avrComsumptionPer = comsum(avrComsumptionPer,weight,airCondition);
+        this.avrComsumptionPer = comsum(avrComsumptionPer,airCondition);
 
     }
 
-
-    public double comsum(double avrComsumptionPer, double weight, boolean airCondition) {
+    @Override
+    public double comsum(double avrComsumptionPer, boolean airCondition) {
         if (airCondition) {
-            avrComsumptionPer += (avrComsumptionPer * 0.8) + (0.5 * (weight / 100));
+            avrComsumptionPer += (avrComsumptionPer * 1.6) + (0.5 * (weight / 100));
         }
         else
         {

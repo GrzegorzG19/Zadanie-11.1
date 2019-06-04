@@ -6,7 +6,9 @@ public class Car extends Vehicle {
         super(name, capacity, avrComsumptionPer);
 
         this.airCondition = airCondition;
-        this.avrComsumptionPer = comsum(avrComsumptionPer, airCondition);
+
+            this.avrComsumptionPer = comsum(avrComsumptionPer, airCondition);
+
     }
     public double comsum(double avrComsumptionPer, boolean airCondition){
         if (airCondition) {
@@ -14,7 +16,5 @@ public class Car extends Vehicle {
         }
         return avrComsumptionPer;
     }
-    public boolean isAirCondition() {
-        return airCondition;
-    }
+
 }
