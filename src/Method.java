@@ -1,6 +1,6 @@
 public class Method {
-    public static double range(double fuelCap, double avrComsumption) {
-        double rangeKM = fuelCap / avrComsumption;
+    public static double range(Vehicle vehicle) {
+        double rangeKM = vehicle.getCapacity() / vehicle.getAvrComsumptionPer();
         return rangeKM;
     }
 }

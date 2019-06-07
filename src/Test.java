@@ -3,10 +3,10 @@ public class Test {
 
         Truck truck = new Truck("cięzarowka", 100, 2, true, 10000);
         Car car = new Car("Volvo", 20, 2, true);
-        System.out.println(truck.name + " " + truck.capacity + " " + truck.airCondition + " " + truck.weight + " " + truck.avrComsumptionPer + " ");
-        System.out.println(car.name + " " + car.capacity + " " + car.avrComsumptionPer + " " + car.airCondition);
+        System.out.println(truck.getName() + " " + truck.getCapacity() + " " + truck.isAirCondition() + " " + truck.getWeight() + " " + truck.getAvrComsumptionPer() + " ");
+        System.out.println(car.getName() + " " + car.getCapacity() + " " + car.getAvrComsumptionPer() + " " + car.isAirCondition());
 
-        System.out.println(Method.range(car.capacity, car.avrComsumptionPer) + "KM");
+        System.out.println(Method.range(car) + "KM");
 
 
         Car[] cars = new Car[4];
@@ -16,17 +16,17 @@ public class Test {
         cars[3] = new Car("Mitsu", 85, 4, false);
 
         for (int i = 0; i < cars.length; i++) {
-            System.out.println(cars[i].name + " " + cars[i].capacity + " " + cars[i].avrComsumptionPer + " " + cars[i].airCondition);
-            System.out.println(Method.range(cars[i].capacity, cars[i].avrComsumptionPer) + "KM ma zasięg ten pojazd");
+            System.out.println(cars[i].getName() + " " + cars[i].getCapacity() + " " + cars[i].getAvrComsumptionPer() + " " + cars[i].isAirCondition());
+            System.out.println(Method.range(cars[i]) + "KM ma zasięg ten pojazd");
         }
 
         for (int i = 0; i < cars.length; i++) {
 
-            cars[i] = new Car(cars[i].name, cars[i].capacity, cars[i].avrComsumptionPer, true);
+            cars[i] = new Car(cars[i].getName(), cars[i].getCapacity(), cars[i].getAvrComsumptionPer(), true);
         }
         for (int i = 0; i < cars.length; i++) {
-            System.out.println(cars[i].name + " " + cars[i].capacity + " " + cars[i].avrComsumptionPer + " " + cars[i].airCondition);
-            System.out.println(Method.range(cars[i].capacity, cars[i].avrComsumptionPer) + "KM ma zasięg ten pojazd");
+            System.out.println(cars[i].getName() + " " + cars[i].getCapacity() + " " + cars[i].getAvrComsumptionPer() + " " + cars[i].isAirCondition());
+            System.out.println(Method.range(cars[i]) + "KM ma zasięg ten pojazd");
         }
 
 
